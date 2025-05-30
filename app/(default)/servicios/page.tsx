@@ -32,12 +32,12 @@ export default function ServiciosPage() {
       <section className="relative py-24 text-center px-4">
         {/* SVG decorativos */}
         <img
-          src="/images/infra-cloud.svg"
+          src="/images/infra-cloud.png"
           alt="Infraestructura en la nube"
           className="absolute top-8 left-8 w-40 opacity-10 animate-pulse pointer-events-none"
         />
         <img
-          src="/images/network-illustration.svg"
+          src="/images/network-illustration.png"
           alt="Red conectada"
           className="absolute bottom-10 right-10 w-48 opacity-10 animate-pulse pointer-events-none"
         />
@@ -67,7 +67,6 @@ export default function ServiciosPage() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }
