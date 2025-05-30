@@ -18,7 +18,7 @@ export default function ContactoPage() {
           href="mailto:contacto@corewatch.com"
           className="btn bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-lg"
         >
-          contacto@corewatch.com
+          contacto@corewatch.com.ar
         </a>
       </div>
     </div>
