@@ -51,8 +51,6 @@ export default function ClientesPage() {
         </div>
       </div>
 
-      {/* Footer universal */}
-      <Footer />
     </>
   );
 }
