@@ -30,7 +30,7 @@ export default function ModalVideo({
 
   return (
     <div className="relative">
-      {/* Secondary illustration */}
+      {/* Fondo decorativo secundario */}
       <div
         className="pointer-events-none absolute bottom-8 left-1/2 -z-10 -ml-28 -translate-x-1/2 translate-y-1/2"
         aria-hidden="true"
@@ -44,13 +44,11 @@ export default function ModalVideo({
         />
       </div>
 
-      {/* Video thumbnail */}
+      {/* Miniatura del video */}
       <button
         className="group relative flex items-center justify-center rounded-2xl focus:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200"
-        onClick={() => {
-          setModalOpen(true);
-        }}
-        aria-label="Watch the video"
+        onClick={() => setModalOpen(true)}
+        aria-label="Ver monitoreo"
         data-aos="fade-up"
         data-aos-delay={200}
       >
@@ -64,7 +62,8 @@ export default function ModalVideo({
             alt={thumbAlt}
           />
         </figure>
-        {/* Play icon */}
+
+        {/* Ícono de play */}
         <span className="pointer-events-none absolute p-2.5 before:absolute before:inset-0 before:rounded-full before:bg-gray-950 before:duration-300 group-hover:before:scale-110">
           <span className="relative flex items-center gap-3">
             <svg
@@ -94,15 +93,14 @@ export default function ModalVideo({
               </defs>
             </svg>
             <span className="text-sm font-medium leading-tight text-gray-300">
-              Watch Demo
-              <span className="text-gray-600"> - </span>
-              3:47
+              Ver Monitoreo
             </span>
           </span>
         </span>
       </button>
-      {/* End: Video thumbnail */}
+      {/* Fin: Miniatura del video */}
 
+      {/* Modal de video */}
       <Dialog
         initialFocus={videoRef}
         open={modalOpen}
@@ -126,7 +124,7 @@ export default function ModalVideo({
                 controls
               >
                 <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
+                Tu navegador no soporta este video.
               </video>
             </DialogPanel>
           </div>

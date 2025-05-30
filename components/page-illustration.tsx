@@ -3,6 +3,10 @@ import Illustration from "@/public/images/page-illustration.svg";
 import BlurredShapeGray from "@/public/images/blurred-shape-gray.svg";
 import BlurredShape from "@/public/images/blurred-shape.svg";
 
+/**
+ * Renderiza ilustraciones decorativas de fondo.
+ * Si `multiple` es true, muestra formas adicionales difuminadas.
+ */
 export default function PageIllustration({
   multiple = false,
 }: {
@@ -10,6 +14,7 @@ export default function PageIllustration({
 }) {
   return (
     <>
+      {/* Ilustración principal (centro-top) */}
       <div
         className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/4"
         aria-hidden="true"
@@ -19,9 +24,11 @@ export default function PageIllustration({
           src={Illustration}
           width={846}
           height={594}
-          alt="Page illustration"
+          alt="Ilustración de fondo"
         />
       </div>
+
+      {/* Formas adicionales difuminadas (si multiple=true) */}
       {multiple && (
         <>
           <div
@@ -33,7 +40,7 @@ export default function PageIllustration({
               src={BlurredShapeGray}
               width={760}
               height={668}
-              alt="Blurred shape"
+              alt="Forma difuminada gris"
             />
           </div>
           <div
@@ -45,7 +52,7 @@ export default function PageIllustration({
               src={BlurredShape}
               width={760}
               height={668}
-              alt="Blurred shape"
+              alt="Forma difuminada color"
             />
           </div>
         </>

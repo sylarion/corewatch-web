@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Inicio - CoreWatch",
+  description:
+    "CoreWatch ofrece monitoreo IT inteligente para redes, servidores, contenedores y aplicaciones. Dashboards en tiempo real, alertas avanzadas y consultoría especializada.",
 };
 
 import PageIllustration from "@/components/page-illustration";
